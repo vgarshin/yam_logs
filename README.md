@@ -12,3 +12,16 @@ Callback URL: https://oauth.yandex.ru/verification_code
 ```
 https://oauth.yandex.ru/authorize?response_type=token&client_id={id}
 ```
+и сохранить полученный токен в файле `creds.txt` в виде:
+```
+{oauth_token} {counter_id}
+```
+который должен находиться в одной lиректории со скриптом.
+
+Запуск скрипта:
+```
+python3.7 yam.py DIR_NAME DATE &> yam.log
+```
+где:
+`DIR_NAME` = имя директории, куда будут сохранены данные логов, например `/home/username/data`;
+`DATE` = дата в виде `YYYYMMDD`, до которой будут загружены логи (по умолчанию глубина загрузки составляет 1 месяц).
