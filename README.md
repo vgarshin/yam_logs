@@ -23,5 +23,5 @@ https://oauth.yandex.ru/authorize?response_type=token&client_id={id}
 python3.7 yam.py DIR_NAME DATE &> yam.log
 ```
 где:
-`DIR_NAME` = имя директории, куда будут сохранены данные логов, например `/home/username/data`;
-`DATE` = дата в виде `YYYYMMDD`, до которой будут загружены логи (по умолчанию глубина загрузки составляет 1 месяц).
+- `DIR_NAME` = имя директории, куда будут сохранены данные логов, например `/home/username/data`;
+- `DATE` = дата в виде `YYYYMMDD`, до которой будут загружены логи (по умолчанию глубина загрузки составляет 1 месяц).
